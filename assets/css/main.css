@@ -2038,11 +2038,18 @@ input, select, textarea {
 				transform: translateX(-100%);
 			}
 
-			.main.style2.inactive.right > .content {
+			/* .main.style2.inactive.right > .content {
 				-moz-transform: translateX(100%);
 				-webkit-transform: translateX(100%);
 				-ms-transform: translateX(100%);
 				transform: translateX(100%);
+			} */
+			.main.style2.inactive.right > .content {
+				-moz-animation: fadeBackground 6s;
+				-webkit-animation: fadeBackground 6s;
+				-ms-animation: fadeBackground 6s;
+				animation: fadeBackground 6s;
+				z-index: 100001;
 			}
 
 		.main.style3 {

@@ -16,6 +16,12 @@
 		<link rel="stylesheet" href="assets/css/slider.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			#header #website-name div:hover {
+				background:rgb(155 0 0 / 95%);
+			}
+			#header nav ul li:hover {
+				background:rgb(155 0 0 / 95%);
+			}
 			#one .style2 h2,
 			#one .style2 p {
 				text-align: center;
@@ -61,6 +67,14 @@
 			}
 			.swiper-slide p {
 				font-size: 20px;
+				text-shadow: 0px 2px 3px black;
+			}
+			@media screen and (max-width: 736px) {
+				.swiper-slide p {
+					font-size: 12px;
+					line-height: normal;
+					text-shadow: 0px 2px 3px black;
+				}
 			}
 		</style>
 	</head>
@@ -68,7 +82,11 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1>Matthew Jaskiewicz</h1>
+				<a id="website-name" href="wwww.google.com" style="text-decoration: none;">
+					<div style="height: 100%; width: fit-content; padding: 0 20px 0 20px;">
+						<h4>Matthew Jaskiewicz</h4>
+					</div>
+				</a>
 				<nav>
 					<ul>
 						<li><a href="#intro">Intro</a></li>
@@ -96,11 +114,11 @@
 			</section>
 
 		<!-- One -->
-			<section id="one" class="main style2 right dark fullscreen">
-				<div style="position: absolute; height: 100%;">
-					<img src="images/mathew.jpg"/>
+			<section id="one" class="main style2 right dark fullscreen" style="justify-content: center;">
+				<div style="position: absolute; height: 100%; right: 0;">
+					<img src="images/bio-bg.jpg"/>
 				</div>
-				<div class="content box style2" style="background: #0000009e;">
+				<div class="content box style2" style="background: #00000000">
 					<header>
 						<h2>What I Do</h2>
 					</header>
